@@ -1,0 +1,1 @@
+awk '{split($0, a, " "); for(w in a){m[a[w]] += 1}} END {for (i in m) print i":"m[i]}' inputfile > outputfile
